@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content" class="body">
+<h1 class="page-title"> Archives for {{ SITENAME }}</h1>
+
+<ol id="posts-list">
+
+  {% for article in dates %}
+
+  <li>
+    <span class="entry-date">{{ article.locale_date }}</span>
+ >> 
+    <span class="entry-name"><a href='{{ article.url }}'>{{ article.title }}</a></span>
+  </li>
+  
+  {% endfor %}
+
+</ol>
+</section>
+{% endblock %}

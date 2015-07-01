@@ -1,0 +1,210 @@
+
+/* Imports */
+@import url("reset.css");
+@import url("pygment.css");
+
+
+/***** Global *****/
+/* Body */
+body {
+    background: white;
+    color: #000305;
+    font-size: 14px; /* Base font size: 14px */
+    font-family: monospace;
+}
+
+hr { border: 2px solid #EEEEEE; }
+
+
+
+/* Anchors */
+
+a:link, a:visited {
+	/* color: black; */
+	/* padding: 0 1px; */
+	text-decoration: none;
+}
+
+a:hover, a:active, a.active {
+	/* background-color: red; */
+	/* color: white; */
+	text-decoration: underline;
+}
+
+
+	
+.entry-date {color: gray;}
+
+
+
+/* Quotes */
+blockquote {
+    margin: 20px;
+    font-style: italic;
+    background:lightgrey;
+}
+cite {}
+
+q {}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/******************    Header           *****************/
+#banner {
+
+
+    margin: 0 auto 0 auto;
+    width: 50%;
+}
+
+	/* Banner */
+#banner h1 {
+    font-size: 3.5em; 
+    margin: 0.25em auto 0.25em auto;
+    text-align: center;
+}
+
+#banner h1 a:link, #banner h1 a:visited {
+		       color: #000305;
+		       /* font-weight: bold; */
+		       text-decoration: none;
+		       width: 500px;
+
+		   }
+
+
+	
+#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+	
+	/* Main Nav */
+#nav {
+    /* background: black; */
+    margin: 0 auto 2em auto;
+    padding: 0;
+    text-align: center;
+}
+
+
+#nav ul {list-style: none; margin: 0;}
+#nav li {display: inline; margin: 0;}
+	
+#nav a:link, #nav a:visited {
+		 /* color: white; */
+		 display: inline-block;
+		 padding: 5px 1.5em;
+		 text-decoration: none;
+		    }
+#nav a:hover, #banner nav a:active,
+#nav .active a:link, #nav .active a:visited {
+				background: white;
+				color: black;
+				text-shadow: none !important;
+				text-decoration:underline;
+
+		     }
+	
+
+
+
+
+
+
+/******************************* Content *****************************/
+
+#content {
+    background: #fff;
+    overflow: hidden;
+    width: 50%;
+    line-height: 1.5em;
+    margin: 3em auto 2em auto;
+
+}
+
+
+
+/***** Sections *****/
+
+/** Featured **/
+
+#featured {
+
+}
+
+#featured .entry-meta {
+    margin-bottom: 25px;
+}
+
+
+#featured .entry-name {
+
+    font-size: 200%;
+    font-weight: 400;
+}
+
+#featured .entry-content {
+    margin-top: 2em;
+}
+
+#featured .entry-content p{
+    padding-bottom: 1em;
+}
+
+
+
+/** Page Titles **/
+
+.page-title {
+    font-size: 2em;
+    padding-bottom: 1em;
+    font-weight: 400;
+}
+
+
+/** Seperator **/
+
+#seperator {
+    border-bottom: black;
+    border-style: solid;
+    margin-bottom: 1em;
+    line-height: 1.25em;
+}
+/* Post List */
+
+#posts-list {
+    list-style: none;
+    line-height: 1.5em;
+}
+
+
+#posts-list .entry-name {
+    font-weight: 400;
+    text-indent: 2em;
+    margin-bottom: 0.5em;
+
+}
+
+#posts-list .entry-date {
+    font-size: smaller;
+}
+
+
+/*********************** Footer ********************/
+#footer {
+    padding-bottom: 2em; 
+    text-align: center; 
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+	
