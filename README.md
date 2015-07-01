@@ -1,0 +1,1 @@
+# dpriv-pelican-theme
