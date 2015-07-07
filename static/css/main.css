@@ -9,7 +9,7 @@
 body {
     background: white;
     color: #000305;
-    font-size: 14px; /* Base font size: 14px */
+    font-size: 1em; /* Base font size: 14px */
     font-family: monospace;
 }
 
@@ -58,6 +58,7 @@ img {
 
     margin: 0 auto 0 auto;
     width: 50%;
+    min-width: 320px;
 }
 
 	/* Banner */
@@ -116,8 +117,9 @@ img {
 
 #content {
     background: #fff;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 50%;
+    min-width: 320px;
     line-height: 1.5em;
     margin: 3em auto 2em auto;
 
