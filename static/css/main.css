@@ -10,7 +10,7 @@ body {
     background: white;
     color: #000305;
     font-size: 1em; /* Base font size: 14px */
-    font-family: monospace;
+    font-family: sans-serif;
 }
 
 hr { border: 2px solid #EEEEEE; }
@@ -55,7 +55,7 @@ img {
 /******************    Header           *****************/
 #banner {
 
-
+    /* font-family: monospace; */
     margin: 0 auto 0 auto;
     width: 50%;
     min-width: 320px;

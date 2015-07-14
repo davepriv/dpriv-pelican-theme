@@ -25,30 +25,27 @@
 
 	  <div id="nav">
 	    <ul>
+{#	      
               <li><a href="{{ SITEURL }}/">Home</a></li>
 
-	      <li {% if url ==  '/archives.html'  %} class="active" {% endif %}>
+	      <li>
 		<a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a>
 	      </li>
-
-{#	      {% for cat, null in categories %}
-              <li {% if cat == category %}class="active"{% endif %}>
-		<a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
-	      </li>
-              {% endfor %}      #}
+#}
 
 	      
               {% for title, url in MENUITEMS %} 
-              <li {% if page is defined and url == page.url %} class="active" {% endif %}>
-                <a href="{{ SITEURL }}/{{ url }}">{{ title }}</a>
+              <li>
+                <a href="{{ SITEURL }}/{{ url }}">{% if title == active_page %}[{{ title }}]{% else %} {{title}}{% endif %}</a>
               </li>
               {% endfor %}
 
 	      
               {% if DISPLAY_PAGES_ON_MENU != False %}
               {% for p in PAGES %}
-              <li {% if p == page %}class="active"{% endif %}>
-		<a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+              <li>
+		<a href="{{ SITEURL }}/{{ p.url }}">
+		  {% if p == page %}[{{ p.title }}]{% else %} {{p.title}} {% endif%}</a>
 	      </li>
               {% endfor %}
               {% endif %}
